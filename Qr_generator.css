@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("QR_code_for_mobile_English_Wikipedia.svg") center/cover fixed no-repeat;
+    background-size: 600px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.header .box{
+    background: aqua;
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    color: aliceblue;
+    box-shadow: 10px 10px rgb(152, 198, 212);
+    text-align: center;
+}
+.header .box hr{
+    border-top: 2px solid white;
+    margin: 3px;
+}
+.header .box h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header .box input{
+    width: 100%;
+    margin-bottom: 3px;
+    height: 50px;
+    padding: 3px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+.header .box button{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}

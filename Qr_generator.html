@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="Qr_generator.css">
+    <link rel="icon" href="QR_code_for_mobile_English_Wikipedia.svg">
+    <title>Qr Generator</title>
+</head>
+<body>
+    <div class="header">
+        <div class="box">
+            <h1>Qr Generator</h1>
+            <hr>
+            <br>
+            <input type="text" placeholder="Paste an URL" id="qrTEXT">
+            <div id="BOX"> 
+                <img src="" id="qrI">
+            <button onclick = "generateQR()">GeneratorQRcode</button>
+            </div>
+        </div>
+    </div>
+<script>
+let BOX = document.getElementById("BOX");
+let qrI = document.getElementById("qrI");
+let qrTEXT = document.getElementById("qrTEXT");
+
+function generateQR(){
+    qrI.src ="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrTEXT.value;
+}
+</script>
+</body>
+</html>
